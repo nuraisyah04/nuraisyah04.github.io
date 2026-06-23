@@ -1,154 +1,261 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title> Nuraisyah's e-Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuraisyah Binti Mohd Zikre | Data Engineering & System Developer ePortfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f19;
+            color: #f3f4f6;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .tech-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-purple-500 selection:text-white">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-gray-800 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <span class="text-xl font-bold text-gradient">NURAISYAH.DE</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-white transition duration-200 text-sm font-medium">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white transition duration-200 text-sm font-medium">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white transition duration-200 text-sm font-medium">Projects</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white transition duration-200 text-sm font-medium">Leadership</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="https://github.com/nuraisyah04" target="_blank" class="text-gray-400 hover:text-white text-xl transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>e-Portfolio</strong> <span>by nuraisyah</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    <header id="about" class="pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl tech-gradient"></div>
+        </div>
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <span class="px-4 py-1.5 rounded-full text-xs font-semibold glass-card text-blue-400 border border-blue-500/30 inline-block mb-4">
+                Data Engineering Student @ UTM
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">
+                Hi, I'm <span class="text-gradient">Nuraisyah Mohd Zikre</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                A third-year Bachelor of Computer Science (Data Engineering) student passionate about modern data architecture, cloud systems, and building seamless digital experiences. Bridging the gap between robust backend pipelines and intuitive frontend system design.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects" class="px-6 py-3 rounded-xl tech-gradient font-medium text-white shadow-lg shadow-purple-500/20 hover:opacity-90 transition">
+                    View My Work
+                </a>
+                <a href="https://github.com/nuraisyah04?tab=repositories" target="_blank" class="px-6 py-3 rounded-xl glass-card font-medium text-gray-300 hover:text-white transition border border-gray-700">
+                    <i class="fab fa-github mr-2"></i> GitHub Repositories
+                </a>
+            </div>
+        </div>
+    </header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing TIS.html">SECP-1513</a></li>
-							<li><a href="landing DL.html">SECR-1013</a></li>
-							<li><a href="landing PT.html">SECJ-1013</a></li>
-							<li><a href="landing DS.html">SECI-1013</a></li>
-							<li><a href="landing UHLB.html">UHLB-2122</a></li>
-							<li><a href="landing ULRS.html">ULRS-1032</a></li>
-					</nav>
+    <section id="skills" class="py-16 bg-gray-900/40 border-y border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-12 text-gray-200">Technical Expertise & Tooling</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-5 glass-card rounded-2xl text-center">
+                    <div class="w-12 h-12 mx-auto flex items-center justify-center bg-blue-500/10 rounded-xl text-blue-400 mb-4 text-2xl">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-200">Data Engineering</h3>
+                    <p class="text-xs text-gray-500 mt-1">SQL, Apache Spark, ETL Workflows, Distributed Joins</p>
+                </div>
+                <div class="p-5 glass-card rounded-2xl text-center">
+                    <div class="w-12 h-12 mx-auto flex items-center justify-center bg-purple-500/10 rounded-xl text-purple-400 mb-4 text-2xl">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-200">Low-Code & Cloud</h3>
+                    <p class="text-xs text-gray-500 mt-1">SAP Build Apps, SAP BTP, Cloud Functions</p>
+                </div>
+                <div class="p-5 glass-card rounded-2xl text-center">
+                    <div class="w-12 h-12 mx-auto flex items-center justify-center bg-pink-500/10 rounded-xl text-pink-400 mb-4 text-2xl">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-200">UI/UX & Branding</h3>
+                    <p class="text-xs text-gray-500 mt-1">Figma, Adobe Illustrator, Canva</p>
+                </div>
+                <div class="p-5 glass-card rounded-2xl text-center">
+                    <div class="w-12 h-12 mx-auto flex items-center justify-center bg-green-500/10 rounded-xl text-green-400 mb-4 text-2xl">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-200">AI & Logic</h3>
+                    <p class="text-xs text-gray-500 mt-1">NLP Triage, Predicate Logic, LLM Workflows</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Nuraisyah Binti Mohd Zikre.</h1>
-							</header>
-							<div class="content">
-								<p>I am Data Engineering student pursuing my studies at Universiti Teknologi Malaysia (UTM).<br />
-								Here is my e-Portfolio as a first year student to get to know me better.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-4">
+        <div class="mb-12 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight">Featured Projects & Research</h2>
+                <p class="text-gray-400 mt-2">Systems, platforms, and research components syncable with my GitHub</p>
+            </div>
+            <a href="https://github.com/nuraisyah04?tab=repositories" target="_blank" class="text-blue-400 hover:underline text-sm font-medium mt-4 md:mt-0">
+                Explore all repositories <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+        </div>
 
-				<!-- Main -->
-					<div id="main">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between p-6 border border-gray-800 hover:border-gray-700 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-full">Research Paper</span>
+                        <i class="fab fa-github text-xl text-gray-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-100 mb-2">LLM Workflows vs Traditional ETL Frameworks</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        A comparative academic analysis exploring the evolution of data engineering, focusing on the architectural shift from structured traditional ETL pipelines to modern LLM-integrated processing frameworks.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800">
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Data Infrastructure</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">LLM Workflows</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">ETL</span>
+                </div>
+            </div>
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/TIS BG.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing TIS.html" class="link">SECP-1513</a></h3>
-										<p>Technology & Information System</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/Digital Logic BG.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing DL.html" class="link">SECR-1013</a></h3>
-										<p>Digital Logic</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/PT BG.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing PT.html" class="link">SECJ-1013</a></h3>
-										<p>Programming Technique I</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/DS BG.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing DS.html" class="link">SECI-1013</a></h3>
-										<p>Discrete Structure</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/UHLB BG.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing UHLB.html" class="link">UHLB-2122</a></h3>
-										<p>Professional Communication Skills I</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/ULRS BG.png" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing ULRS.html" class="link">ULRS-1032</a></h3>
-										<p>Integrity & Anti-Corruption Course</p>
-									</header>
-								</article>
-							</section>
+            <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between p-6 border border-gray-800 hover:border-gray-700 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-full">Cloud Application</span>
+                        <i class="fab fa-github text-xl text-gray-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-100 mb-2">Tadika Genius Aulad TMS</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        A complete Teacher Management System (TMS) architected using SAP Build Apps and SAP Business Technology Platform (BTP). Features granular modules tracking records and administrative data tasks seamlessly.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800">
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">SAP Build Apps</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">SAP BTP</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Full Stack</span>
+                </div>
+            </div>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>About Me</h2>
-									</header>
-									<p>I am very eager to learn new things especially on things tech world which it is very complex and not many girls interested in this world. Therefore, here I am today pursuing my studies at UTM to answer my every curiousity. Hence, get to know more about my background and my past before I become a first year student of Data Engineering at UTM.</p>
-									<ul class="actions">
-										<li><a href="https://www.canva.com/design/DAFXwDqvXlU/wLo0t5-OFh4V55UiZpvW6w/view?utm_content=DAFXwDqvXlU&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="button next">Learn More</a></li>
-									</ul>
-								</div>
-							</section>
+            <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between p-6 border border-gray-800 hover:border-gray-700 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono text-green-400 bg-green-500/10 px-2.5 py-1 rounded-full">AI Implementation</span>
+                        <i class="fab fa-github text-xl text-gray-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-100 mb-2">MindConnect AI</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        An intelligent triage and monitoring platform utilizing Natural Language Processing (NLP) paired with granular Predicate Logic paths to automate and safe-keep early mental health assessment indicators.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800">
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Predicate Logic</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">NLP</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Python</span>
+                </div>
+            </div>
 
-					<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/nuraisyah04" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="www.linkedin.com/in/nuraisyah-mohd-zikre-021505296" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-						</div>
-					</footer>
+            <div class="glass-card rounded-2xl overflow-hidden flex flex-col justify-between p-6 border border-gray-800 hover:border-gray-700 transition duration-300">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-full">Database / System Migration</span>
+                        <i class="fab fa-github text-xl text-gray-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-100 mb-2">KADA Cooperative System Digitalization</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">
+                        Transitioned a massive traditional paper-based cooperative ecosystem into a secure, structured web platform. Orchestrated using modern database normalization techniques and iterative Agile documentation.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800">
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Database Normalization</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">SQL</span>
+                    <span class="text-xs bg-gray-800 text-gray-300 px-2.5 py-1 rounded-md">Agile Docs</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					</div>
+    <section id="experience" class="py-20 bg-gray-900/20 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-gradient">Leadership & Creative Initiatives</h2>
+                <p class="text-gray-400 mt-2">Active roles within UTM committees, faculty groups, and event curation</p>
+            </div>
 
-			</div>
+            <div class="space-y-12 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-gray-800">
+                
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-purple-500 border-4 border-gray-900 -translate-x-1.5 z-10 group-hover:scale-125 transition"></div>
+                    <div class="pl-12 md:pl-0 md:w-[45%] md:text-right">
+                        <span class="text-xs font-mono text-purple-400 font-semibold">Ongoing Role</span>
+                        <h4 class="text-lg font-bold text-gray-200 mt-1">Exco for Multimedia and Publicity</h4>
+                        <p class="text-sm font-medium text-gray-400">PERSAKA (Persatuan Mahasiswa Sains Komputer), UTM</p>
+                        <p class="text-xs text-gray-500 mt-2">Leading continuous design systems, faculty-wide branding schemes, formal announcements, and collaborative templates for cross-functional technical student tracks.</p>
+                    </div>
+                    <div class="hidden md:block w-[45%]"></div>
+                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-blue-500 border-4 border-gray-900 -translate-x-1.5 z-10 group-hover:scale-125 transition"></div>
+                    <div class="hidden md:block w-[45%]"></div>
+                    <div class="pl-12 md:w-[45%]">
+                        <span class="text-xs font-mono text-blue-400 font-semibold">Event Production</span>
+                        <h4 class="text-lg font-bold text-gray-200 mt-1">Creative Lead & Branding — Run For Unity '26</h4>
+                        <p class="text-sm font-medium text-gray-400">UTM Student Initiative</p>
+                        <p class="text-xs text-gray-500 mt-2">Designed intricate graphic infrastructure including high-fidelity medal configurations using Adobe Illustrator vector layer alignments, promotional brand guidelines, and unique thematic icons.</p>
+                    </div>
+                </div>
 
-	</body>
+                <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                    <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-pink-500 border-4 border-gray-900 -translate-x-1.5 z-10 group-hover:scale-125 transition"></div>
+                    <div class="pl-12 md:pl-0 md:w-[45%] md:text-right">
+                        <span class="text-xs font-mono text-pink-400 font-semibold">December 2025</span>
+                        <h4 class="text-lg font-bold text-gray-200 mt-1">Program Coordinator — Techscope '25</h4>
+                        <p class="text-sm font-medium text-gray-400">Faculty of Computing, UTM</p>
+                        <p class="text-xs text-gray-500 mt-2">Managed communications, timelines, and formal scheduling for corporate visits targeting marquee technology destinations including Maxis and Comstar.</p>
+                    </div>
+                    <div class="hidden md:block w-[45%]"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 bg-gray-950 py-8 text-center text-xs text-gray-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <div class="flex justify-center space-x-6 text-sm text-gray-400">
+                <a href="https://github.com/nuraisyah04" target="_blank" class="hover:text-white transition"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#about" class="hover:text-white transition"><i class="fas fa-user"></i> Profile</a>
+            </div>
+            <p>&copy; 2026 Nuraisyah Binti Mohd Zikre. Handcrafted Portfolio Page.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
